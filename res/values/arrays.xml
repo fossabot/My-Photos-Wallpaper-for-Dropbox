@@ -1,0 +1,56 @@
+<resources>
+    <string-array name="preferences_frequency_entries">
+        <item>5 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+    </string-array>
+    <string-array name="preferences_frequency_values">
+        <item>5</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1800</item>
+        <item>3600</item>
+        <item>7200</item>
+    </string-array>
+    <string-array name="preferences_backgroundcolour_entries">
+        <item>Black</item>
+        <item>White</item>
+        <item>Dark Gray</item>
+        <item>Gray</item>
+        <item>Light Gray</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Cyan</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="preferences_backgroundcolour_values">
+        <item>BLACK</item>
+        <item>WHITE</item>
+        <item>DARKGRAY</item>
+        <item>GRAY</item>
+        <item>LIGHTGRAY</item>
+        <item>RED</item>
+        <item>GREEN</item>
+        <item>BLUE</item>
+        <item>YELLOW</item>
+        <item>CYAN</item>
+        <item>MAGENTA</item>
+    </string-array>
+    <string-array name="preferences_scalemode_entries">
+        <item>Show entire image</item>
+        <item>Fill entire screen</item>
+    </string-array>
+    <string-array name="preferences_scalemode_values">
+        <item>Scale</item>
+        <item>Crop</item>
+    </string-array>
+</resources>
