@@ -1,3 +1,8 @@
+<!--
+  ~ Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+  ~ All rights reserved.
+  -->
+
 <resources>
     <string name="app_name">My Photos Wallpaper</string>
     <string name="preferences_authorize_title">Dropbox Authorization</string>
@@ -26,5 +31,6 @@
     <string name="preferences_sepiaeffect_title">Sepia</string>
     <string name="preferences_lowqualityimages_title">Low Quality Images</string>
     <string name="preferences_lowqualityimages_summary">Use lower resolution images to save on data transfers</string>
+    <string name="preferences_transparent_title">Transparency/Watermark</string>
 
 </resources>

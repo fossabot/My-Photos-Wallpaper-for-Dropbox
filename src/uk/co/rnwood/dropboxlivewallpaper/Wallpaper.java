@@ -383,15 +383,46 @@ public class Wallpaper extends WallpaperService {
 
         private Bitmap applyImageEffects(Canvas canvas, Bitmap image, Paint imagePaint) {
 
-            if (preferences.GetEffectGrayscale() || preferences.GetEffectSepia()) {
+            if (preferences.GetEffectGrayscale()
+                    || preferences.GetEffectSepia()
+                    || preferences.GetEffectTransparent()
+                    ) {
                 ColorMatrix cm = new ColorMatrix();
-                cm.setSaturation(0);
 
-                if (preferences.GetEffectSepia()) {
+                if (preferences.GetEffectGrayscale() || preferences.GetEffectSepia()) {
+                    cm.setSaturation(0);
+                }
+
+                if (preferences.GetEffectSepia() || preferences.GetEffectTransparent()) {
                     final ColorMatrix matrixB = new ColorMatrix();
-                    matrixB.setScale(1f, .95f, .82f, 1.0f);
+
+
+                    float[] matrix = new float[]{
+                            1, 0, 0, 0, 0,
+                            0, 1, 0, 0, 0,
+                            0, 0, 1, 0, 0,
+                            0, 0, 0, 1, 0
+                    };
+
+
+                    if (preferences.GetEffectSepia()) {
+                        int index = 0;
+                        for (float replacement :
+                                new float[]{0.3930000066757202f, 0.7689999938011169f, 0.1889999955892563f, 0, 0, 0.3490000069141388f, 0.6859999895095825f, 0.1679999977350235f, 0, 0, 0.2720000147819519f, 0.5339999794960022f, 0.1309999972581863f, 0, 0}) {
+                            matrix[index] = replacement;
+                            index++;
+                        }
+
+                    }
+
+                    if (preferences.GetEffectTransparent()) {
+                        matrix[18] = 0.3f;
+                    }
+
+                    matrixB.set(matrix);
                     cm.setConcat(matrixB, cm);
                 }
+
 
                 ColorMatrixColorFilter filter = new ColorMatrixColorFilter(cm);
                 imagePaint.setColorFilter(filter);

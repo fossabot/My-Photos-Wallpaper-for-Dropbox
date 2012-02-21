@@ -24,6 +24,7 @@ public class Preferences {
     public static final String KEY_EFFECT_SEPIA = "effect_sepia";
     public static final String KEY_EFFECT_BLUREDGES = "effect_bluredges";
     public static final String KEY_EFFECT_INSTANTPHOTO = "effect_instantphoto";
+    public static final String KEY_EFFECT_TRANSPARENT = "effect_transparent";
     public static final String KEY_BACKGROUNDCOLOUR = "backgroundcolour";
     public static final String KEY_LOWQUALITYIMAGES = "lowqualityimages";
 
@@ -70,6 +71,10 @@ public class Preferences {
 
     public boolean GetEffectGrayscale() {
         return sharedPreferences.getBoolean(KEY_EFFECT_GRAYSALE, false);
+    }
+
+    public boolean GetEffectTransparent() {
+        return sharedPreferences.getBoolean(KEY_EFFECT_TRANSPARENT, false);
     }
 
     public boolean GetEffectSepia() {

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--
+  ~ Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+  ~ All rights reserved.
+  -->
+
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <android.preference.PreferenceCategory android:title="@string/preferences_dropboxaccountgroup_title"/>
     <android.preference.Preference android:key="@+id/preferences_authorize_id"
@@ -9,7 +14,8 @@
     </android.preference.Preference>
     <android.preference.PreferenceCategory android:title="@string/preferences_generalgroup_title">
 
-        <uk.co.rnwood.dropboxlivewallpaper.DropboxGalleryPreference android:key="folders" android:title="@string/preferences_folders_title"/>
+        <uk.co.rnwood.dropboxlivewallpaper.DropboxGalleryPreference android:key="folders"
+                                                                    android:title="@string/preferences_folders_title"/>
 
         <android.preference.ListPreference
                 android:key="frequency"
@@ -23,15 +29,15 @@
                 />
 
         <android.preference.ListPreference
-            android:key="backgroundcolour"
-            android:title="@string/preferences_backgroundcolour_title"
-            android:summary="@string/preferences_backgroundcolour_summary"
-            android:entries="@array/preferences_backgroundcolour_entries"
-            android:entryValues="@array/preferences_backgroundcolour_values"
-            android:defaultValue="BLACK"
-            android:persistent="true"
+                android:key="backgroundcolour"
+                android:title="@string/preferences_backgroundcolour_title"
+                android:summary="@string/preferences_backgroundcolour_summary"
+                android:entries="@array/preferences_backgroundcolour_entries"
+                android:entryValues="@array/preferences_backgroundcolour_values"
+                android:defaultValue="BLACK"
+                android:persistent="true"
 
-            />
+                />
 
         <android.preference.ListPreference
                 android:key="scalemode"
@@ -44,16 +50,26 @@
 
                 />
 
-        <android.preference.CheckBoxPreference android:key="lowqualityimages" android:defaultValue="false" android:title="@string/preferences_lowqualityimages_title" android:summary="@string/preferences_lowqualityimages_summary"/>
+        <android.preference.CheckBoxPreference android:key="lowqualityimages" android:defaultValue="false"
+                                               android:title="@string/preferences_lowqualityimages_title"
+                                               android:summary="@string/preferences_lowqualityimages_summary"/>
 
 
-        <android.preference.CheckBoxPreference android:key="onlydownloadonwifi" android:defaultValue="false" android:title="@string/preferences_onlydownloadonwifi_title" android:summary="@string/preferences_onlydownloadonwifi_summary"/>
+        <android.preference.CheckBoxPreference android:key="onlydownloadonwifi" android:defaultValue="false"
+                                               android:title="@string/preferences_onlydownloadonwifi_title"
+                                               android:summary="@string/preferences_onlydownloadonwifi_summary"/>
     </android.preference.PreferenceCategory>
 
     <android.preference.PreferenceCategory android:title="@string/preferences_effectsgroup_title">
-        <android.preference.CheckBoxPreference android:key="effect_bluredges" android:defaultValue="false" android:title="@string/preferences_bluredges_title"/>
-        <android.preference.CheckBoxPreference android:key="effect_grayscale" android:defaultValue="false" android:title="@string/preferences_grayscaleeffect_title"/>
-        <android.preference.CheckBoxPreference android:key="effect_sepia" android:defaultValue="false" android:title="@string/preferences_sepiaeffect_title"/>
-        <android.preference.CheckBoxPreference android:key="effect_instantphoto" android:defaultValue="false" android:title="@string/preferences_instantphotoeffect_title"/>
+        <android.preference.CheckBoxPreference android:key="effect_bluredges" android:defaultValue="false"
+                                               android:title="@string/preferences_bluredges_title"/>
+        <android.preference.CheckBoxPreference android:key="effect_grayscale" android:defaultValue="false"
+                                               android:title="@string/preferences_grayscaleeffect_title"/>
+        <android.preference.CheckBoxPreference android:key="effect_sepia" android:defaultValue="false"
+                                               android:title="@string/preferences_sepiaeffect_title"/>
+        <android.preference.CheckBoxPreference android:key="effect_transparent" android:defaultValue="false"
+                                               android:title="@string/preferences_transparent_title"/>
+        <android.preference.CheckBoxPreference android:key="effect_instantphoto" android:defaultValue="false"
+                                               android:title="@string/preferences_instantphotoeffect_title"/>
     </android.preference.PreferenceCategory>
 </PreferenceScreen>
