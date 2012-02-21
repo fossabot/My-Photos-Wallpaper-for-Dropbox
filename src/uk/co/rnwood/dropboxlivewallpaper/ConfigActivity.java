@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+ * All rights reserved.
+ */
+
 package uk.co.rnwood.dropboxlivewallpaper;
 
 import android.os.Bundle;

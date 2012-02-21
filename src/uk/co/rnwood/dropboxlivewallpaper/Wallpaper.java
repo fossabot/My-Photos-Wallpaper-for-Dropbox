@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+ * All rights reserved.
+ */
+
 package uk.co.rnwood.dropboxlivewallpaper;
 
 import android.app.Notification;
@@ -10,7 +15,6 @@ import android.content.SharedPreferences;
 import android.graphics.*;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.AsyncTask;
 import android.os.Handler;
 import android.service.wallpaper.WallpaperService;
 import android.util.Log;
@@ -21,12 +25,13 @@ import com.dropbox.client2.exception.DropboxUnlinkedException;
 import com.dropbox.client2.session.AccessTokenPair;
 import com.dropbox.client2.session.AppKeyPair;
 import com.dropbox.client2.session.Session;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Random;
 
-import static android.view.GestureDetector.*;
+import static android.view.GestureDetector.SimpleOnGestureListener;
 
 public class Wallpaper extends WallpaperService {
 
@@ -39,7 +44,7 @@ public class Wallpaper extends WallpaperService {
     public static final String DROPBOX_APPSECRET = "w9dcryx8is9mcc5";
 
 
-    public class WallpaperEngine extends WallpaperService.Engine implements SharedPreferences.OnSharedPreferenceChangeListener{
+    public class WallpaperEngine extends WallpaperService.Engine implements SharedPreferences.OnSharedPreferenceChangeListener {
 
         private WindowManager windowManager;
         private NotificationManager notificationManager;
@@ -52,7 +57,7 @@ public class Wallpaper extends WallpaperService {
         private GestureDetector gestureDetector;
 
         public WallpaperEngine(Wallpaper service) {
-            context  =service;
+            context = service;
             imageFetcher = new ImageFetcher();
             uiThreadHandler = new Handler();
             imageQueue = new ImageQueue(new File(getFilesDir().getPath() + "/images"), new ImageQueue.OnImageAddedHandler() {
@@ -74,7 +79,8 @@ public class Wallpaper extends WallpaperService {
                     Log.v(TAG, "Image removed from queue, notifying download thread");
                     notifyDownloadThread();
                 }
-            });
+            }
+            );
 
             preferences = new Preferences(service);
             notificationManager = (NotificationManager) context.getSystemService(context.NOTIFICATION_SERVICE);
@@ -99,7 +105,7 @@ public class Wallpaper extends WallpaperService {
 
             preferences.registerOnSharedPreferenceChangeListener(this);
 
-            gestureDetector = new GestureDetector(new SimpleOnGestureListener(){
+            gestureDetector = new GestureDetector(new SimpleOnGestureListener() {
                 @Override
                 public boolean onDoubleTap(MotionEvent e) {
                     Log.v(TAG, "Double tap - moving to next image if possible");
@@ -111,7 +117,7 @@ public class Wallpaper extends WallpaperService {
             setTouchEventsEnabled(true);
         }
 
-             private Context context;
+        private Context context;
 
         @Override
         public void onTouchEvent(MotionEvent event) {
@@ -138,50 +144,45 @@ public class Wallpaper extends WallpaperService {
 
         private void downloadThreadWork() {
 
-            Log.v(TAG, "Download thread running" );
-            
-            while(true)
-            {
-                while (imageQueue.size() < 5)
-                {
-                    Log.v(TAG, imageQueue.size() + " images in queue. Downloading next image." );
-                    
-                    if (!tryGetNextImage())
-                    {
+            Log.v(TAG, "Download thread running");
+
+            while (true) {
+                while (imageQueue.size() < 5) {
+                    Log.v(TAG, imageQueue.size() + " images in queue. Downloading next image.");
+
+                    if (!tryGetNextImage()) {
                         //Give up
-                        Log.v(TAG, "Error downloading images - giving up" );
+                        Log.v(TAG, "Error downloading images - giving up");
                         break;
                     }
                 }
 
-                Log.v(TAG, "Stopping" );
+                Log.v(TAG, "Stopping");
 
                 try {
-                    synchronized (Thread.currentThread())
-                    {
-                        Log.v(TAG, "Sleeping until there's something to do" );
-                    Thread.currentThread().wait();
-                        Log.v(TAG, "Woken up" );
+                    synchronized (Thread.currentThread()) {
+                        Log.v(TAG, "Sleeping until there's something to do");
+                        Thread.currentThread().wait();
+                        Log.v(TAG, "Woken up");
                     }
                 } catch (InterruptedException e) {
-                     return;
+                    return;
                 }
             }
         }
 
-        private boolean tryGetNextImage()
-        {
-            Log.v(TAG, "Attempting to get next image" );
+        private boolean tryGetNextImage() {
+            Log.v(TAG, "Attempting to get next image");
 
             NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
             if (activeNetwork == null || !activeNetwork.isConnected()) {
-                Log.v(TAG, "No active network connection" );
+                Log.v(TAG, "No active network connection");
                 return false;
             }
 
             if (preferences.GetOnlyDownloadOnWifi()) {
                 if (activeNetwork.getType() != ConnectivityManager.TYPE_WIFI) {
-                    Log.v(TAG, "No active WiFi connection (WiFi only setting is enabled)" );
+                    Log.v(TAG, "No active WiFi connection (WiFi only setting is enabled)");
                     return false;
                 }
             }
@@ -192,7 +193,7 @@ public class Wallpaper extends WallpaperService {
             String authSecret = preferences.GetAuthSecret();
 
             if (authKey == null || authSecret == null) {
-                Log.v(TAG, "Don't have Dropbox credentials. Giving up and notifying user" );
+                Log.v(TAG, "Don't have Dropbox credentials. Giving up and notifying user");
                 notificationManager.notify(AUTHREQUIRED_NOTIFICATIONID, authRequiredNotification);
                 return false;
 
@@ -201,91 +202,77 @@ public class Wallpaper extends WallpaperService {
             }
 
 
-            try
-            {
+            try {
                 Display display = windowManager.getDefaultDisplay();
                 int width = display.getWidth();
                 int height = display.getHeight();
-                
-                if (preferences.GetLowQualityImages())
-                {
-                    width = width /2;
+
+                if (preferences.GetLowQualityImages()) {
+                    width = width / 2;
                     height = height / 2;
                 }
-                
+
                 Bitmap image = imageFetcher.fetchNextImage(authSession, preferences.GetFolders(), width, height);
-                
-                if (image == null)
-                {
+
+                if (image == null) {
                     return false;
                 }
-                
+
                 imageQueue.push(image);
                 image.recycle();
-                
+
                 return true;
-            }catch (DropboxUnlinkedException ex)
-            {
-                Log.e(TAG, "Got DropBoxUnlinked exception - notifying user", ex );
+            } catch (DropboxUnlinkedException ex) {
+                Log.e(TAG, "Got DropBoxUnlinked exception - notifying user", ex);
                 notificationManager.notify(AUTHREQUIRED_NOTIFICATIONID, authRequiredNotification);
                 return false;
-            }
-            catch (DropboxException ex)
-            {
-                Log.e(TAG, "Got DropBox exception", ex );
+            } catch (DropboxException ex) {
+                Log.e(TAG, "Got DropBox exception", ex);
                 return false;
-            } catch (IOException ex)
-            {
-                Log.e(TAG, "Got IO exception", ex );
+            } catch (IOException ex) {
+                Log.e(TAG, "Got IO exception", ex);
                 return false;
             }
         }
 
 
-        private void notifyDownloadThread()
-        {
-            synchronized (downloadThread)
-            {
-                Log.v(TAG, "Trying to wake up download thread" );
-            downloadThread.notify();
+        private void notifyDownloadThread() {
+            synchronized (downloadThread) {
+                Log.v(TAG, "Trying to wake up download thread");
+                downloadThread.notify();
             }
         }
-        
 
 
         @Override
         public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {
 
-            if (s.equals(Preferences.KEY_DROPBOXAUTHKEY))
-            {
-                Log.v(TAG, "Dropbox credentials changed. Notifying download thread." );
+            if (s.equals(Preferences.KEY_DROPBOXAUTHKEY)) {
+                Log.v(TAG, "Dropbox credentials changed. Notifying download thread.");
                 notificationManager.cancel(AUTHREQUIRED_NOTIFICATIONID);
                 notifyDownloadThread();
             }
         }
 
 
-
         @Override
         public void onDestroy() {
-            Log.v(TAG, "Being destroyed" );
+            Log.v(TAG, "Being destroyed");
 
             super.onDestroy();
 
-            Log.v(TAG, "Unregistering listeners" );
+            Log.v(TAG, "Unregistering listeners");
             context.unregisterReceiver(broadcastReceiver);
             preferences.unregisterOnSharedPreferenceChangeListener(this);
-            
+
             Log.v(TAG, "Stopping download thread");
             downloadThread.interrupt();
-            try
-            {
-            downloadThread.join();
-            } catch (InterruptedException ex)
-            {
+            try {
+                downloadThread.join();
+            } catch (InterruptedException ex) {
 
             }
-            Log.v(TAG, "Download thread exited" );
+            Log.v(TAG, "Download thread exited");
         }
 
 
@@ -293,13 +280,12 @@ public class Wallpaper extends WallpaperService {
         public void onVisibilityChanged(boolean visible) {
             super.onVisibilityChanged(visible);
 
-            if (visible)
-            {
-            Log.v(TAG, "Visible" );
+            if (visible) {
+                Log.v(TAG, "Visible");
             } else {
-                Log.v(TAG, "Not Visible" );
+                Log.v(TAG, "Not Visible");
             }
-           render();
+            render();
         }
 
         private ImageFetcher imageFetcher;
@@ -308,56 +294,48 @@ public class Wallpaper extends WallpaperService {
 
         private Bitmap currentImage;
 
-        private void render()
-        {
-            Log.v(TAG, "Beginning render" );
-            if (!isVisible())
-            {
-                Log.v(TAG, "Not visible - not rendering" );
+        private void render() {
+            Log.v(TAG, "Beginning render");
+            if (!isVisible()) {
+                Log.v(TAG, "Not visible - not rendering");
                 return;
             }
-            
-            if (isPreview())
-            {
-                Log.v(TAG, "Rendering preview image" );
+
+            if (isPreview()) {
+                Log.v(TAG, "Rendering preview image");
                 Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.preview);
                 render(bitmap);
                 return;
             }
-            
-            long nextImageDate =  preferences.GetLastImageChange() + (preferences.GetFrequency()*1000);
+
+            long nextImageDate = preferences.GetLastImageChange() + (preferences.GetFrequency() * 1000);
             long now = new Date().getTime();
-            
-            Log.v(TAG, "Checking if image needs to be changed:  now: " + now +  " nextimage:" + nextImageDate );
-            if (currentImage == null || now >= nextImageDate)
-            {
+
+            Log.v(TAG, "Checking if image needs to be changed:  now: " + now + " nextimage:" + nextImageDate);
+            if (currentImage == null || now >= nextImageDate) {
                 Log.v(TAG, "Image needs changing");
-                
-                try
-                {
+
+                try {
                     Bitmap nextImage = imageQueue.pop();
-                    if (nextImage != null)
-                    {
+                    if (nextImage != null) {
                         Log.v(TAG, "Got next image - changing current image");
                         Bitmap lastImage = currentImage;
                         currentImage = nextImage;
                         preferences.SetLastImageChange(now);
-                        if (lastImage != null)
-                        {
+                        if (lastImage != null) {
                             lastImage.recycle();
                         }
-                        
-                    }      else {
+
+                    } else {
                         Log.v(TAG, "Next image not available - keeping current image for now");
                     }
-                } catch (IOException ex)
-                {
+                } catch (IOException ex) {
 
                 }
             } else {
-                Log.v(TAG, "Image change not needed" );
+                Log.v(TAG, "Image change not needed");
             }
-            
+
             render(currentImage);
         }
 
@@ -371,17 +349,17 @@ public class Wallpaper extends WallpaperService {
             if (image != null) {
 
                 int screenWidth = canvas.getWidth();
-                int screenHeight =canvas.getHeight();
+                int screenHeight = canvas.getHeight();
 
                 if (preferences.GetScaleMode() == Preferences.ScaleMode.Scale) {
 
-                    float scaleFactor = Math.min(screenWidth / ((float) image.getWidth()), screenHeight / ((float)image.getHeight()));
+                    float scaleFactor = Math.min(screenWidth / ((float) image.getWidth()), screenHeight / ((float) image.getHeight()));
                     Matrix scale = new Matrix();
                     scale.postScale(scaleFactor, scaleFactor);
                     image = Bitmap.createBitmap(image, 0, 0, image.getWidth(), image.getHeight(), scale, false);
                 } else {
 
-                    float scaleFactor = Math.max(screenWidth / ((float) image.getWidth()), screenHeight / ((float)image.getHeight()));
+                    float scaleFactor = Math.max(screenWidth / ((float) image.getWidth()), screenHeight / ((float) image.getHeight()));
                     Matrix scale = new Matrix();
                     scale.postScale(scaleFactor, scaleFactor);
                     image = Bitmap.createBitmap(image, 0, 0, image.getWidth(), image.getHeight(), scale, false);
@@ -390,7 +368,7 @@ public class Wallpaper extends WallpaperService {
                 Paint imagePaint = new Paint();
                 imagePaint.setAntiAlias(true);
 
-                image= applyImageEffects(canvas, image, imagePaint);
+                image = applyImageEffects(canvas, image, imagePaint);
 
                 int renderX = (screenWidth / 2) - (image.getWidth() / 2);
                 int renderY = (screenHeight / 2) - (image.getHeight() / 2);
@@ -405,13 +383,11 @@ public class Wallpaper extends WallpaperService {
 
         private Bitmap applyImageEffects(Canvas canvas, Bitmap image, Paint imagePaint) {
 
-            if (preferences.GetEffectGrayscale() || preferences.GetEffectSepia())
-            {
+            if (preferences.GetEffectGrayscale() || preferences.GetEffectSepia()) {
                 ColorMatrix cm = new ColorMatrix();
                 cm.setSaturation(0);
 
-                if (preferences.GetEffectSepia())
-                {
+                if (preferences.GetEffectSepia()) {
                     final ColorMatrix matrixB = new ColorMatrix();
                     matrixB.setScale(1f, .95f, .82f, 1.0f);
                     cm.setConcat(matrixB, cm);
@@ -421,13 +397,11 @@ public class Wallpaper extends WallpaperService {
                 imagePaint.setColorFilter(filter);
             }
 
-            if (preferences.GetEffectBlurEdges())
-            {
+            if (preferences.GetEffectBlurEdges()) {
                 imagePaint.setMaskFilter(new BlurMaskFilter(30, BlurMaskFilter.Blur.NORMAL));
             }
 
-            if (preferences.GetEffectInstantPhoto())
-            {
+            if (preferences.GetEffectInstantPhoto()) {
                 float scaleFactor = 0.8F;
                 Matrix scale = new Matrix();
                 scale.postScale(scaleFactor, scaleFactor);
@@ -436,7 +410,7 @@ public class Wallpaper extends WallpaperService {
                 int renderX = (canvas.getWidth() / 2) - (image.getWidth() / 2);
                 int renderY = (canvas.getHeight() / 2) - (image.getHeight() / 2);
 
-                canvas.rotate(random.nextInt(20)-10, canvas.getWidth()/2, canvas.getHeight()/2);
+                canvas.rotate(random.nextInt(20) - 10, canvas.getWidth() / 2, canvas.getHeight() / 2);
 
                 Paint rectPaint = new Paint();
                 rectPaint.setAntiAlias(true);

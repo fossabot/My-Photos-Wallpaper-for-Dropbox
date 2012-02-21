@@ -1,8 +1,12 @@
+/*
+ * Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+ * All rights reserved.
+ */
+
 package uk.co.rnwood.dropboxlivewallpaper;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.TextView;
 import com.dropbox.client2.DropboxAPI;
@@ -58,17 +62,15 @@ public class AuthorizeDropBoxActivity extends Activity {
             preferences.SetAuthKeyAndSecret(accessTokenPair.key, accessTokenPair.secret);
 
 
-
-            if (getIntent().getAction().endsWith("NOTIFICATION"))
-            {
-            Intent startMain = new Intent(Intent.ACTION_MAIN);
-            startMain.addCategory(Intent.CATEGORY_HOME);
-            startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(startMain);
+            if (getIntent().getAction().endsWith("NOTIFICATION")) {
+                Intent startMain = new Intent(Intent.ACTION_MAIN);
+                startMain.addCategory(Intent.CATEGORY_HOME);
+                startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(startMain);
             }
 
             finish();
-    
+
         } else {
 
             TextView label = (TextView) findViewById(R.id.statusText);

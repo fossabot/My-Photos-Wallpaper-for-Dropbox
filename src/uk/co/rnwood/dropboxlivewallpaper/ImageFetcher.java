@@ -1,32 +1,19 @@
+/*
+ * Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+ * All rights reserved.
+ */
+
 package uk.co.rnwood.dropboxlivewallpaper;
 
 
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.os.*;
-import android.os.Process;
-import android.text.method.DateTimeKeyListener;
-import android.view.Display;
-import android.view.WindowManager;
 import com.dropbox.client2.DropboxAPI;
 import com.dropbox.client2.android.AndroidAuthSession;
 import com.dropbox.client2.exception.DropboxException;
 import com.dropbox.client2.exception.DropboxServerException;
-import com.dropbox.client2.exception.DropboxUnlinkedException;
-import com.dropbox.client2.session.AccessTokenPair;
-import com.dropbox.client2.session.AppKeyPair;
-import com.dropbox.client2.session.Session;
 
-import java.io.*;
+import java.io.InputStream;
 import java.util.*;
 
 public class ImageFetcher {
@@ -109,16 +96,15 @@ public class ImageFetcher {
         return photos;
     }
 
-    private void findPhotos(DropboxAPI<AndroidAuthSession> api,DropboxAPI.Entry photosFolder, List<DropboxAPI.Entry> photos) throws DropboxException {
+    private void findPhotos(DropboxAPI<AndroidAuthSession> api, DropboxAPI.Entry photosFolder, List<DropboxAPI.Entry> photos) throws DropboxException {
         for (DropboxAPI.Entry file : photosFolder.contents) {
-        if (!file.isDir && file.mimeType.equals("image/jpeg")) {
-            photos.add(file);
-        }    else if (file.isDir)
-        {
-              DropboxAPI.Entry subDirEntry = getDirectoryInfo(api, file.path);
-            findPhotos(api, subDirEntry, photos);
+            if (!file.isDir && file.mimeType.equals("image/jpeg")) {
+                photos.add(file);
+            } else if (file.isDir) {
+                DropboxAPI.Entry subDirEntry = getDirectoryInfo(api, file.path);
+                findPhotos(api, subDirEntry, photos);
+            }
         }
-    }
     }
 
     private DropboxAPI.ThumbSize getDropBoxThumbsize(int minWidth, int minHeight) {
