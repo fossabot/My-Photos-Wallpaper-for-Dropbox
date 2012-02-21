@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       id="perspective3860"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <filter
+       id="filter3955"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-.25"
+       y="-.25">
+      <feGaussianBlur
+         id="feGaussianBlur3957"
+         in="SourceAlpha"
+         stdDeviation="5.2"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix3959"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.67 0 " />
+      <feOffset
+         id="feOffset3961"
+         in="bluralpha"
+         dx="4"
+         dy="4"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge3963">
+        <feMergeNode
+           id="feMergeNode3965"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3967"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter3021"
+       inkscape:label="Invert"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Invert colors"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix3023"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3025"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="-12.301114"
+     inkscape:cy="606.61184"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="716"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f2f2f2;stroke:none;filter:url(#filter3955)"
+       id="rect3013"
+       width="417.01569"
+       height="396.04385"
+       x="28.349289"
+       y="40.997177"
+       inkscape:export-filename="C:\Users\RXWood\Desktop\logo-large.png"
+       inkscape:export-xdpi="147.38356"
+       inkscape:export-ydpi="147.38356"
+       transform="matrix(1,0,0,1.0420829,0,-1.7252794)" />
+    <rect
+       style="fill:#ffffff;stroke:#b3b3b3;stroke-width:0.95921403000000005;filter:url(#filter3021)"
+       id="rect3013-1"
+       width="353.82236"
+       height="308.55972"
+       x="59.542244"
+       y="66.629967"
+       inkscape:export-filename="C:\Users\RXWood\Desktop\logo-large.png"
+       inkscape:export-xdpi="147.38356"
+       inkscape:export-ydpi="147.38356" />
+    <g
+       id="layer1-9"
+       inkscape:label="Layer 1"
+       transform="matrix(0.79008599,0,0,0.79008599,60.849964,31.878511)"
+       style="stroke:#00002b;stroke-width:15.10000038;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="C:\Users\RXWood\Desktop\logo-large.png"
+       inkscape:export-xdpi="147.38356"
+       inkscape:export-ydpi="147.38356">
+      <path
+         inkscape:export-ydpi="16.103756"
+         inkscape:export-xdpi="16.103756"
+         inkscape:export-filename="C:\Users\RXWood\Desktop\icon.png"
+         inkscape:connector-curvature="0"
+         id="path2996"
+         d="m 175.46429,140.1271 c 0.25079,0.76733 -57.00419,66.44259 -58.46954,67.06843 -0.42925,0.18334 -0.78046,36.07084 -0.78046,79.75 l 0,79.41667 78.5,0 c 64.93314,0 78.5,-0.23152 78.5,-1.33958 0,-1.2417 8.78047,-11.14903 24.95746,-28.16042 3.66116,-3.85 13.14068,-13.975 21.06559,-22.5 7.92491,-8.525 14.64924,-15.61245 14.94294,-15.74989 0.29371,-0.13743 0.41617,-36.02493 0.27215,-79.75 l -0.26187,-79.50011 -79.48813,0 c -43.71848,0 -79.37564,0.34421 -79.23814,0.7649 z m 152.38543,2.72742 c 0.3653,0.95198 -2.99532,5.59815 -9.28139,12.83182 -5.41972,6.23672 -18.1325,20.86517 -28.25061,32.50768 l -18.39657,21.16818 -45.15343,0 c -33.786,0 -45.45553,-0.3021 -46.35343,-1.2 -1.71648,-1.71648 -1.71648,-63.88352 0,-65.6 0.91136,-0.91136 18.71809,-1.2 74.03138,-1.2 63.64995,0 72.90358,0.18813 73.40405,1.49232 z m -150.63543,34.04764 0,31.42194 -2.25,0.5503 c -1.2375,0.30267 -13.725,0.42374 -27.75,0.26905 -23.24738,-0.2564 -25.5,-0.43179 -25.5,-1.98535 0,-0.93726 10.125,-13.30622 22.5,-27.48658 28.34512,-32.48032 31.04486,-35.39963 32.12169,-34.73411 0.48307,0.29855 0.87831,14.68269 0.87831,31.96475 z m 154.75661,42.43287 c 0.18662,52.58323 -0.0514,72.67739 -0.87244,73.66674 -0.90167,1.08644 -6.62645,1.36043 -28.42483,1.36043 -15.01267,0 -28.00757,-0.27314 -28.87755,-0.60699 -1.40709,-0.53995 -1.58179,-5.1731 -1.58179,-41.95031 0,-33.21711 0.25999,-41.5005 1.32272,-42.14301 1.26536,-0.76502 15.3417,-16.64819 43.06675,-48.59478 7.06201,-8.13729 13.35088,-14.62483 13.97527,-14.41674 0.82988,0.27658 1.20429,19.82824 1.39187,72.68466 z m -155.00249,35.02717 0.25412,42.5 -27.93217,31 c -15.3627,17.05 -28.52705,31 -29.25412,31 -1.08104,0 -1.37218,-13.03021 -1.59755,-71.5 -0.15159,-39.325 -0.0288,-72.51938 0.27289,-73.7653 l 0.54849,-2.2653 28.72711,0.2653 28.72711,0.2653 0.25412,42.5 z m 93.00747,-2.61643 c 0.18765,28.60972 -0.059,40.26982 -0.87244,41.25 -1.55851,1.87788 -86.81771,2.03788 -88.68915,0.16643 -0.89201,-0.89201 -1.2,-11.13738 -1.2,-39.91821 0,-21.29502 0.27491,-39.43462 0.61091,-40.31022 0.54818,-1.42855 5.19423,-1.56529 45.25,-1.33179 l 44.63909,0.26022 0.26159,39.88357 z m -0.26159,78.11643 0,33 -73.75,0.25645 c -58.75045,0.20429 -73.75,3.9e-4 -73.75,-1.00256 0,-1.20209 6.02732,-8.08891 37.5,-42.84756 7.7,-8.50394 15.35,-17.1074 17,-19.11881 l 3,-3.65711 45,0.1848 45,0.18479 0,33 z m 60.97204,-32.54525 c 0.32454,0.52512 -11.40335,13.91262 -26.06198,29.75 -29.08106,31.41959 -30.19808,32.54429 -31.51422,31.73087 -1.02481,-0.63336 -1.24785,-60.75028 -0.22917,-61.76895 1.07034,-1.07035 57.1385,-0.79092 57.80537,0.28808 z"
+         style="fill:none;stroke:#ffffff;stroke-width:15.10000038;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         inkscape:export-ydpi="16.103756"
+         inkscape:export-xdpi="16.103756"
+         inkscape:export-filename="C:\Users\RXWood\Desktop\icon.png"
+         transform="matrix(0.70935584,-0.70485054,0.91117064,0.41202921,0,0)"
+         y="184.35341"
+         x="-153.04944"
+         height="59.504143"
+         width="98.825768"
+         id="rect3776"
+         style="fill:none;stroke:#ffffff;stroke-width:14.56967545;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         inkscape:export-ydpi="16.103756"
+         inkscape:export-xdpi="16.103756"
+         inkscape:export-filename="C:\Users\RXWood\Desktop\icon.png"
+         transform="matrix(0.68766932,-0.72602404,0.90135754,0.43307573,0,0)"
+         y="358.52942"
+         x="-83.175911"
+         height="60.583023"
+         width="102.67289"
+         id="rect3776-9"
+         style="fill:none;stroke:#ffffff;stroke-width:14.98457909;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+  </g>
+</svg>
