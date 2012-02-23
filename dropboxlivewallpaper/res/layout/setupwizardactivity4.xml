@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+  ~ All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_weight="1" android:padding="24px" android:gravity="center"
+                  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+        <TextView android:padding="12px" android:layout_height="wrap_content" android:layout_width="wrap_content"
+                  android:text="Select how you would you like images to be sized?"/>
+
+        <RadioGroup android:layout_height="fill_parent" android:layout_width="fill_parent">
+            <RadioButton android:layout_weight="1"
+                         android:text="Show whole image:" android:layout_height="fill_parent"
+                         android:layout_width="fill_parent" android:id="@+id/showWholeImageRadioButton"/>
+            <ImageView
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent" android:layout_width="fill_parent"
+                    android:src="@drawable/sizemodeshowwholeimage"/>
+
+            <RadioButton android:layout_weight="1"
+                         android:text="Fill the screen:" android:layout_height="fill_parent"
+                         android:layout_width="fill_parent" android:id="@+id/fillScreenRadioButton"/>
+            <ImageView
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent" android:layout_width="fill_parent"
+                    android:src="@drawable/sizemodefillscreen"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:padding="24px" android:gravity="right" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt; Back"
+                android:id="@+id/backButton"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next &gt;"
+                android:id="@+id/nextButton"/>
+    </LinearLayout>
+
+</LinearLayout>

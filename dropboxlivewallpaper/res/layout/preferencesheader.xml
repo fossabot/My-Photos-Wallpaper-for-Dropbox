@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+  ~ All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="6px">
+    <ImageView android:padding="6px" android:layout_height="48px" android:layout_width="48px"
+               android:src="@drawable/icon"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="To enable all the features below please purchase the full version of this application!"/>
+</LinearLayout>

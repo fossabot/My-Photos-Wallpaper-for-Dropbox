@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+  ~ All rights reserved.
+  -->
+
+<wallpaper xmlns:android="http://schemas.android.com/apk/res/android" android:description="@string/app_description"
+           android:settingsActivity="uk.co.rnwood.dropboxlivewallpaper.ConfigActivity"
+           android:thumbnail="@drawable/icon">
+
+</wallpaper>
