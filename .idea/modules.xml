@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dropboxlivewallpaper.paid/dropboxlivewallpaper.iml" filepath="$PROJECT_DIR$/dropboxlivewallpaper.paid/dropboxlivewallpaper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dropboxlivewallpaper/dropboxlivewallpaper.iml" filepath="$PROJECT_DIR$/dropboxlivewallpaper/dropboxlivewallpaper.iml" />
     </modules>
   </component>
 </project>
