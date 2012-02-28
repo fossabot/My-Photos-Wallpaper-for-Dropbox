@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+  ~ All rights reserved.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="uk.co.rnwood.dropboxlivewallpaper.core"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+</manifest>

@@ -1,0 +1,39 @@
+<!--
+  ~ Copyright (c) 2012. Robert Wood <rob@rnwood.co.uk>
+  ~ All rights reserved.
+  -->
+
+<resources>
+    <string name="app_name">My Photos Wallpaper</string>
+    <string name="preferences_authorize_title">Dropbox Authorization</string>
+    <string name="preferences_authorize_summary">Authorize use of your Dropbox account</string>
+    <string name="app_description">Show random photos from your Dropbox photos folder</string>
+    <string name="preferences_dropboxaccountgroup_title">Dropbox Account</string>
+    <string name="notification_authrequired">Dropbox Authorization Required</string>
+    <string name="authorize_dropbox_access_title">Authorize Dropbox Access</string>
+
+    <string name="preferences_frequency_title">Image change frequency</string>
+    <string name="preferences_frequency_summary">How often to change the image</string>
+    <string name="preferences_generalgroup_title">General</string>
+    <string name="preferences_grayscaleeffect_title">Grayscale</string>
+    <string name="preferences_bluredges_title">Blur edges</string>
+    <string name="preferences_effectsgroup_title">Effects</string>
+    <string name="preferences_backgroundcolour_title">Background Colour</string>
+    <string name="preferences_backgroundcolour_summary">Colour to render around edges of image</string>
+    <string name="authorizationfailed">Authorization failed - please retry</string>
+    <string name="preferences_onlydownloadonwifi_title">Use WiFi only</string>
+    <string name="preferences_onlydownloadonwifi_summary">Download images using WiFi only</string>
+    <string name="preferences_folders_title">Folders</string>
+    <string name="erroraccessingdropbox">Error accessing Dropbox</string>
+    <string name="preferences_scalemode_title">Image Size Mode</string>
+    <string name="preferences_scalemode_summary">How to scale the images to fit the screen</string>
+    <string name="preferences_instantphotoeffect_title">Instant photo look</string>
+    <string name="preferences_sepiaeffect_title">Sepia</string>
+    <string name="preferences_lowqualityimages_title">Low Quality Images</string>
+    <string name="preferences_lowqualityimages_summary">Use lower resolution images to save on data transfers</string>
+    <string name="preferences_transparent_title">Transparency/Watermark</string>
+    <string name="preferences_advanced_title">Advanced</string>
+    <string name="preferences_runsetupwizard_title">Rerun setup wizard</string>
+    <string name="preferences_runsetupwizard_summary">Runs the setup wizard again</string>
+
+</resources>

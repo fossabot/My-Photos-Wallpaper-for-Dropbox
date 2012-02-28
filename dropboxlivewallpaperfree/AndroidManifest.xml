@@ -5,7 +5,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="uk.co.rnwood.dropboxlivewallpaper" android:versionCode="7" android:versionName="1.5">
+          package="uk.co.rnwood.dropboxlivewallpaperfree" android:versionCode="7" android:versionName="1.5">
 
     <uses-sdk android:minSdkVersion="7"/>
     <uses-feature android:name="android.software.live_wallpaper"/>
@@ -23,7 +23,7 @@
 
     <application android:icon="@drawable/icon" android:label="@string/app_name"
                  android:theme="@android:style/Theme.Light">
-        <service android:name=".core.Wallpaper" android:label="@string/app_name"
+        <service android:name="uk.co.rnwood.dropboxlivewallpaper.core.Wallpaper" android:label="@string/app_name"
                  android:permission="android.permission.BIND_WALLPAPER">
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService"/>
@@ -32,7 +32,8 @@
                        android:resource="@xml/livewallpaper"/>
         </service>
 
-        <activity android:name=".core.LauncherActivity">
+
+        <activity android:name="uk.co.rnwood.dropboxlivewallpaper.core.LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -50,7 +51,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".core.ConfigActivity">
+        <activity android:name="uk.co.rnwood.dropboxlivewallpaper.core.ConfigActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -60,7 +61,8 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".core.AuthorizeDropBoxActivity" android:label="@string/authorize_dropbox_access_title"
+        <activity android:name="uk.co.rnwood.dropboxlivewallpaper.core.AuthorizeDropBoxActivity"
+                  android:label="@string/authorize_dropbox_access_title"
                   android:launchMode="singleTask" android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="uk.co.rnwood.dropboxlivewallpaper.AUTHORIZEDROPBOXACCOUNT"/>
@@ -72,16 +74,21 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".core.SetupWizardActivity" android:label="@string/app_name">
+        <activity android:name="uk.co.rnwood.dropboxlivewallpaper.core.SetupWizardActivity"
+                  android:label="@string/app_name">
             <intent-filter>
                 <action android:name="uk.co.rnwood.dropboxlivewallpaper.SETUPWIZARD"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".core.SetupWizardActivity2" android:label="@string/app_name"/>
-        <activity android:name=".core.SetupWizardActivity3" android:label="@string/app_name"/>
-        <activity android:name=".core.SetupWizardActivity4" android:label="@string/app_name"/>
-        <activity android:name=".core.SetupWizardFinishActivity" android:label="@string/app_name"/>
+        <activity android:name="uk.co.rnwood.dropboxlivewallpaper.core.SetupWizardActivity2"
+                  android:label="@string/app_name"/>
+        <activity android:name="uk.co.rnwood.dropboxlivewallpaper.core.SetupWizardActivity3"
+                  android:label="@string/app_name"/>
+        <activity android:name="uk.co.rnwood.dropboxlivewallpaper.core.SetupWizardActivity4"
+                  android:label="@string/app_name"/>
+        <activity android:name="uk.co.rnwood.dropboxlivewallpaper.core.SetupWizardFinishActivity"
+                  android:label="@string/app_name"/>
     </application>
 
 </manifest>

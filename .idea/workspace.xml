@@ -16,11 +16,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f02f229-b07d-47d9-91e8-dc9d0951dd6f" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper.free\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper.free\res\drawable\icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper.free\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\res\layout\preferencesheader.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/res/drawable/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropboxlivewallpaperfree/res/drawable/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/ant.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/core.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/proguard.cfg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/LauncherActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropboxlivewallpaperfree/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropboxlivewallpaperfree/dropboxlivewallpaperfree.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropboxlivewallpaperfree/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropboxlivewallpaperfree/res/values/strings.xml" />
+      <change type="DELETED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\gen\uk\co\rnwood\dropboxlivewallpaper\R.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\libs\HTTPCOMPONENTS-LICENSE.txt" afterPath="$PROJECT_DIR$/core/libs/HTTPCOMPONENTS-LICENSE.txt" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\libs\JSON-SIMPLE-LICENSE.txt" afterPath="$PROJECT_DIR$/core/libs/JSON-SIMPLE-LICENSE.txt" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\libs\LICENSE" afterPath="$PROJECT_DIR$/core/libs/LICENSE" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\libs\dropbox-android-sdk-1.2.3.jar" afterPath="$PROJECT_DIR$/core/libs/dropbox-android-sdk-1.2.3.jar" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\libs\httpmime-4.0.3.jar" afterPath="$PROJECT_DIR$/core/libs/httpmime-4.0.3.jar" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\libs\json_simple-1.1.jar" afterPath="$PROJECT_DIR$/core/libs/json_simple-1.1.jar" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\drawable\preview.JPG" afterPath="$PROJECT_DIR$/core/res/drawable/preview.JPG" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\drawable\sizemodefillscreen.png" afterPath="$PROJECT_DIR$/core/res/drawable/sizemodefillscreen.png" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\drawable\sizemodeshowwholeimage.png" afterPath="$PROJECT_DIR$/core/res/drawable/sizemodeshowwholeimage.png" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\layout\authorizedropboxactivity.xml" afterPath="$PROJECT_DIR$/core/res/layout/authorizedropboxactivity.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\layout\preferencesheader.xml" afterPath="$PROJECT_DIR$/core/res/layout/preferencesheader.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\layout\setupwizardactivity.xml" afterPath="$PROJECT_DIR$/core/res/layout/setupwizardactivity.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\layout\setupwizardactivity2.xml" afterPath="$PROJECT_DIR$/core/res/layout/setupwizardactivity2.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\layout\setupwizardactivity3.xml" afterPath="$PROJECT_DIR$/core/res/layout/setupwizardactivity3.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\layout\setupwizardactivity4.xml" afterPath="$PROJECT_DIR$/core/res/layout/setupwizardactivity4.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\layout\setupwizardfinishactivity.xml" afterPath="$PROJECT_DIR$/core/res/layout/setupwizardfinishactivity.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\values\arrays.xml" afterPath="$PROJECT_DIR$/core/res/values/arrays.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\values\strings.xml" afterPath="$PROJECT_DIR$/core/res/values/strings.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\xml\livewallpaper.xml" afterPath="$PROJECT_DIR$/core/res/xml/livewallpaper.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\xml\preferences.xml" afterPath="$PROJECT_DIR$/core/res/xml/preferences.xml" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\AuthorizeDropBoxActivity.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/AuthorizeDropBoxActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\ConfigActivity.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/ConfigActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\DropboxGalleryPreference.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/DropboxGalleryPreference.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\ImageFetcher.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/ImageFetcher.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\ImageQueue.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/ImageQueue.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\Preferences.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/Preferences.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\SetupWizardActivity.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/SetupWizardActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\SetupWizardActivity2.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/SetupWizardActivity2.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\SetupWizardActivity3.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/SetupWizardActivity3.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\SetupWizardActivity4.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/SetupWizardActivity4.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\SetupWizardFinishActivity.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/SetupWizardFinishActivity.java" />
+      <change type="MOVED" beforePath="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\src\uk\co\rnwood\dropboxlivewallpaper\Wallpaper.java" afterPath="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/Wallpaper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/dropbox_android_sdk_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/dropbox_android_sdk_1_2_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dropboxlivewallpaper/AndroidManifest.xml" afterPath="$PROJECT_DIR$/dropboxlivewallpaper/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dropboxlivewallpaper/dropboxlivewallpaper.iml" afterPath="$PROJECT_DIR$/dropboxlivewallpaper/dropboxlivewallpaper.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dropboxlivewallpaper/project.properties" afterPath="$PROJECT_DIR$/dropboxlivewallpaper/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dropboxlivewallpaper/res/values/strings.xml" afterPath="$PROJECT_DIR$/dropboxlivewallpaper/res/values/strings.xml" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +93,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/ConfigActivity.java" line="21" class="uk.co.rnwood.dropboxlivewallpaper.ConfigActivity" package="uk.co.rnwood.dropboxlivewallpaper">
+      <breakpoint url="file://$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/ConfigActivity.java" line="21" class="uk.co.rnwood.dropboxlivewallpaper.core.ConfigActivity" package="uk.co.rnwood.dropboxlivewallpaper.core">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -99,77 +147,89 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SetupWizardActivity3.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardActivity3.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dropboxlivewallpaperfree/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="88" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#1557#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/ConfigActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="29" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preferences.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/res/xml/preferences.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="81" selection-start="5119" selection-end="5164" vertical-scroll-proportion="0.0">
+            <state line="35" column="70" selection-start="1521" selection-end="1521" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/res/values/strings.xml">
+        <entry file="file://$PROJECT_DIR$/dropboxlivewallpaperfree/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="81" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.0">
+            <state line="6" column="52" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="icon.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dropboxlivewallpaperfree/res/drawable/icon.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/ConfigActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="12" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preferences.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/res/xml/preferences.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="72" selection-start="0" selection-end="5283" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LauncherActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/LauncherActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="1182" selection-end="1182" vertical-scroll-proportion="1.2459016">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="48" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.421365">
+            <state line="33" column="0" selection-start="1412" selection-end="1690" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetupWizardActivity4.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardActivity4.java">
+      <file leaf-file-name="Activity.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-7/android.jar!/android/app/Activity.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="52" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+            <state line="301" column="0" selection-start="14452" selection-end="14452" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DialogPreference.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-7/android.jar!/android/preference/DialogPreference.class">
+      <file leaf-file-name="livewallpaper.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/res/xml/livewallpaper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="0" selection-start="3238" selection-end="3238" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DropboxGalleryPreference.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/DropboxGalleryPreference.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="40" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.0">
+            <state line="8" column="75" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -193,22 +253,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/res/layout/setupwizardactivity2.xml" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardActivity.java" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardActivity2.java" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/res/layout/setupwizardactivitefinish.xml" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/res/layout/setupwizardfinishactivity.xml" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardFinishActivity.java" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/Preferences.java" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/Wallpaper.java" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/res/layout/setupwizardactivity3.xml" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/DropboxGalleryPreference.java" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/ConfigActivity.java" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/core/local.properties" />
+        <option value="$PROJECT_DIR$/core/project.properties" />
+        <option value="$PROJECT_DIR$/core/src/core/AuthorizeDropBoxActivity.java" />
+        <option value="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/core/AuthorizeDropBoxActivity.java" />
+        <option value="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/SetupWizardActivity.java" />
+        <option value="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/AuthorizeDropBoxActivity.java" />
+        <option value="$PROJECT_DIR$/core/gen/uk/co/rnwood/dropboxlivewallpaper/core/R.java" />
+        <option value="$PROJECT_DIR$/dropboxlivewallpaper/res/values/appstrings.xml" />
+        <option value="$PROJECT_DIR$/core/res/xml/preferences.xml" />
+        <option value="$PROJECT_DIR$/dropboxlivewallpaperfree/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/core/res/xml/livewallpaper.xml" />
         <option value="$PROJECT_DIR$/dropboxlivewallpaper/res/xml/preferences.xml" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardActivity3.java" />
-        <option value="$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardActivity4.java" />
+        <option value="$PROJECT_DIR$/core/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/dropboxlivewallpaper/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/dropboxlivewallpaperfree/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/LauncherActivity.java" />
       </list>
     </option>
   </component>
@@ -271,12 +331,68 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="dropboxlivewallpaper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaperfree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaperfree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaperfree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -302,19 +418,65 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dropboxlivewallpaper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="dropboxlivewallpaper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropboxlivewallpaper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -323,34 +485,34 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="40" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="39" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="50" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="50" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="ExportedApkPath" value="C:\Users\RXWood\Desktop\blah.apk" />
+    <property name="ExportedApkPath" value="C:\Users\RXWood\Desktop\dropboxlivewallpaper.apk" />
     <property name="ExportedModule" value="dropboxlivewallpaper" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="52" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="459" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="469" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="450" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="460" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="50" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="dropboxlivewallpaper" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="50" />
     <property name="DEBUGGABLE_DEVICE" value="SH0BSRT01603" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="false" />
     <property name="DEBUGGABLE_PROCESS" value="uk.co.rnwood.dropboxlivewallpaper" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Android_2.1_WVGA800" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Android_2.1_HVGA" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -362,7 +524,7 @@
     <property name="options.lastSelected" value="MavenSettings" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="SH0BSRT01603" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
@@ -373,11 +535,18 @@
       <recent name="uk.co.rnwood.dropboxlivewallpaper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaperfree\res\values" />
+      <recent name="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\values" />
+      <recent name="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaperfree\res\drawable" />
+      <recent name="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\core\res\drawable" />
       <recent name="C:\Users\RXWood\IdeaProjects\dropboxlivewallpaper\dropboxlivewallpaper\res\layout" />
-      <recent name="C:\Users\RXWood\IdeaProjects\untitled1\res\xml" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="uk.co.rnwood.dropboxlivewallpaper" />
+      <recent name="uk.co.rnwood.dropboxlivewallpaper.core" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Application.dropboxlivewallpaper">
+  <component name="RunManager" selected="Android Application.dropboxlivewallpaperfree">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -556,8 +725,28 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="dropboxlivewallpaperfree" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="dropboxlivewallpaperfree" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="do_nothing" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Android Application.dropboxlivewallpaper" />
+      <item index="1" class="java.lang.String" itemvalue="Android Application.dropboxlivewallpaperfree" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -595,25 +784,26 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.5647059" sideWeight="0.4791192" order="7" side_tool="false" content_ui="tabs" x="108" y="81" width="1182" height="559" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27107063" sideWeight="0.56134456" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.5647059" sideWeight="0.4791192" order="7" side_tool="false" content_ui="tabs" x="109" y="81" width="1182" height="559" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27107063" sideWeight="0.6487395" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981017" sideWeight="0.6487395" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5126051" sideWeight="0.5899772" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3512605" sideWeight="0.5125285" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44705883" sideWeight="0.5899772" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5155657" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.4851936" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3512605" sideWeight="0.48215643" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.4791192" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3512605" sideWeight="0.4791192" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26879272" sideWeight="0.56134456" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.6487395" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39939255" sideWeight="0.4907563" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28094155" sideWeight="0.6487395" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43865547" sideWeight="0.5193622" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62857145" sideWeight="0.91799545" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25132877" sideWeight="0.61680675" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38319328" sideWeight="0.5193622" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14957984" sideWeight="0.91799545" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09747899" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -655,7 +845,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add setup wizard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add launcher activity.&#10;Start refactor to add free version" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -672,6 +862,7 @@
     <MESSAGE value="Update module name and add copyright headers" />
     <MESSAGE value="Add transparent effect.&#10;Improve sepia effect." />
     <MESSAGE value="Add setup wizard" />
+    <MESSAGE value="Add launcher activity.&#10;Start refactor to add free version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -681,111 +872,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardFinishActivity.java">
+    <entry file="file://$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/SetupWizardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="84" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/Preferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="20" selection-start="3898" selection-end="3898" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/res/layout/setupwizardactivity2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/Wallpaper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="67" selection-start="4868" selection-end="4868" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/res/layout/setupwizardactivity4.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardActivity2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="38" selection-start="818" selection-end="818" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/res/layout/setupwizardactivity3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="158" selection-start="925" selection-end="925" vertical-scroll-proportion="0.5219298">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-7/android.jar!/android/preference/DialogPreference.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="3238" selection-end="3238" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/DropboxGalleryPreference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="40" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/ConfigActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+        <state line="18" column="31" selection-start="509" selection-end="509" vertical-scroll-proportion="0.38">
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#0#881#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/gen/uk/co/rnwood/dropboxlivewallpaper/core/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="19" selection-start="250" selection-end="250" vertical-scroll-proportion="0.20987654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/AuthorizeDropBoxActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="47" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="108" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/res/layout/preferencesheader.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="341" selection-end="341" vertical-scroll-proportion="0.66785717">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="81" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.0">
+        <state line="6" column="56" selection-start="160" selection-end="160" vertical-scroll-proportion="0.21383648">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/res/xml/preferences.xml">
+    <entry file="file://$PROJECT_DIR$/core/res/xml/livewallpaper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="81" selection-start="5119" selection-end="5164" vertical-scroll-proportion="0.0">
+        <state line="8" column="75" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardActivity3.java">
+    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaperfree/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="88" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#1557#0" expanded="true" />
-          </folding>
+        <state line="6" column="52" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/src/uk/co/rnwood/dropboxlivewallpaper/SetupWizardActivity4.java">
+    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaperfree/res/drawable/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-7/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="52" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+        <state line="301" column="0" selection-start="14452" selection-end="14452" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/res/xml/preferences.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="72" selection-start="0" selection-end="5283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dropboxlivewallpaper/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="48" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.421365">
+        <state line="33" column="0" selection-start="1412" selection-end="1690" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dropboxlivewallpaperfree/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="70" selection-start="1521" selection-end="1521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/ConfigActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="12" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/uk/co/rnwood/dropboxlivewallpaper/core/LauncherActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1182" selection-end="1182" vertical-scroll-proportion="1.2459016">
           <folding />
         </state>
       </provider>
@@ -819,7 +1013,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Android</last-edited>
+          <last-edited>Android (core)|Android</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -854,7 +1048,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Android|dropboxlivewallpaper</last-edited>
+          <last-edited>dropboxlivewallpaperfree</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
